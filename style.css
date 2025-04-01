@@ -1,0 +1,342 @@
+body{
+    font-family: "Montserrat", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    overflow: hidden;
+    color: #fff;
+    
+}
+
+/* it's a full screen */
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+    background-color:#000 ;
+    border-radius: 1rem; /*1rem= 16px*/
+    width: 340px;
+    margin-right: 0.5rem;
+
+}
+
+.main-content{
+    background-color: #121212;
+    border-radius: 1rem; /*1rem= 16px*/
+    flex: 1;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+
+
+}
+
+.music-player{
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+/* it's a siderbar  div - nav --> <a> */
+a{
+    text-decoration: none;
+    color: #fff;
+}
+/* design the home and search  */
+.nav{
+    background-color: #121212;
+    border-radius: 1rem; /*1rem= 16px*/
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.65;
+    padding: 0.5rem 0.75rem;
+}
+/* nav hover effect */
+.nav-option:hover{
+   opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+/* designing the library page */
+.library{
+    background-color: #121212;
+    border-radius: 1rem; /*1rem= 16px*/
+    height: 100%;
+    padding: 0.5rem 0.75rem;
+    margin-top: 0.4rem;
+
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-optiuon img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.icons{
+    font-size: 1rem;
+    display: flex;
+} 
+.icons i{
+    margin-right: 1rem;
+    /* opacity: 0.65; */
+    filter: grayscale(100%);
+}
+ /* icons hover effect */
+.icons i:hover{
+    opacity: 1;
+}
+
+/* designing the box section */
+.boxs{
+    background-color: #232323;
+    border-radius: 1rem; /*1rem= 16px*/
+    height: 8rem;
+    margin: 0.75rem 0 1.3rem 0;
+    padding:0.75rem 1rem;
+}
+.box-p1{
+   font-size: 1rem;
+   font-weight: 600;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.85;
+   
+}
+
+.badge{
+    background-color: #fff;
+    border-radius: 100px;
+    border: none;
+    padding: 0.25rem 1rem;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    height: 2rem;
+    width: fit-content;
+
+}
+.dark-badge{
+    background-color:#000;
+    color: #fff;
+}
+/* Designing the nav bar */
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: #1e1e1e;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.sticky-img{
+    margin-left: 0.75rem;
+}
+.sticky-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    margin-right: 1rem;
+}
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+/* design the main body */
+.card{
+    background-color: #171717;
+    border-radius: 0.5rem;
+    width: 150px;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-pic{
+    width: 100%;
+    border-radius: 0.5rem;
+  
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.65rem;
+    opacity: 0.5;
+}
+
+/* design a footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    
+}
+.line{
+    height: 30%;
+    width: 90%;
+    border-top: 1px solid white;
+    opacity: 0.35;
+
+}
+
+/* design the music bar */
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* designing the left song .album-bar */
+.album-bar{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0.5rem;
+  
+}
+.album-cover{
+border-radius: 2px;
+height: 3rem;
+align-self: center;
+justify-self: center;
+}
+.music-info{
+    justify-content: center;
+    align-items: center;
+    margin: 4px 14px 4px 14px;   
+}
+.song-title{
+    font-size: 0.75rem;
+}
+.song-info{
+    font-size: 0.55rem;
+    opacity: 0.65;
+    margin-top: -0.75rem;
+}
+.song-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heart-one{
+    margin-right: 1rem;
+}
+
+/* designing the right song .control-bar */
+.control-bar{
+    width: 25%;
+    padding: 10px 20px;
+    gap: 12px;
+}
+.control-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar-icon{
+    height: 0.5rem;
+    font-size: 1rem;  
+}
+.volume-bar{
+    width: 30%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-top: 8px;
+}
+.volume-bar::-webkit-slider-runnable-track{
+    height: 0.2rem;
+    background-color: #ddd;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.volume-bar::-webkit-slider-thumb{
+    display: none;
+}
+@media (max-width: 1000px){
+    .control-bar,.volume-bar{
+        flex-wrap: wrap;
+    }
+}
+
+/* designing the mid song .player-bar */
+.player-bar{
+    width: 50%;
+}
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.5rem;
+    opacity: 0.65;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 55%;
+    appearance: none;
+    background-color: transparent;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    height: 0.2rem;
+    background-color: #ddd;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-thumb{
+    cursor: pointer;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #1dd35a;
+    margin-top: -6px;
+}
+
+
